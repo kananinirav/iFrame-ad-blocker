@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>iFrame Ad Blocker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="header">
+    <h1>iFrame Ad Blocker</h1>
+    <label class="switch">
+      <input type="checkbox" id="enabled">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div id="status">
+    Status: <span id="statusText">Enabled</span>
+  </div>
+
+  <div id="stats">
+    iFrame ads blocked: <span id="count">0</span>
+  </div>
+
+  <div class="info">
+    <p>This extension blocks ads that are delivered through iFrames on websites.</p>
+    <p>Especially effective on:</p>
+    <ul>
+      <li>Video sites with embedded ads</li>
+      <li>Social media embedded content</li>
+      <li>Banner advertisements in iFrames</li>
+    </ul>
+    <p>Toggle the switch to turn blocking on or off.</p>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

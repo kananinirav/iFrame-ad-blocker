@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "iFrame Ad Blocker",
+  "version": "1.0",
+  "description": "Blocks ads delivered through iFrames - perfect for video sites and embedded content",
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content/content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
