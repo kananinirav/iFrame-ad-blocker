@@ -41,6 +41,10 @@ iFrame Ad Blocker targets and restricts advertisements that are loaded through i
   - Toggle the extension on/off
   - Get information about the extension's effectiveness
 
+## Screenshots
+
+![Sample Screenshot](./Sample.png)
+
 ## Contributing
 
 Contributions are welcome! If you'd like to improve the extension
